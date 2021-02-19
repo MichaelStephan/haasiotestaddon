@@ -5,6 +5,7 @@ ENV LANG C.UTF-8
 
 WORKDIR /
 COPY start.sh /app/start.sh
+COPY smtp2mqtt_arm /app/smtp2mqtt
 ENTRYPOINT ["/app/start.sh"]
 
 LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|aarch64|i386|amd64"
